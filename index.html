@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supernatural</title>
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+
+<body>
+
+    <div id="containerP">
+        <video id="video" width="320" height="240" autoplay>
+            <source src="./vid/Supernatural - Carry On Wayward Son (Music Video).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img onclick="playVideo()" id="buttonSupernaturalImg" src="./img/supernatural3.png" alt="supernatural button">
+        <img id="imgSupernatural" src="./img/supernatural2.jfif" alt="supernatural logo">
+    </div>
+    <script>
+        function playVideo() {
+            // Start playing the video
+            var video = document.getElementById("video");
+            //afficher la video 
+            video.style.display = "block";
+            if(video.paused){
+                video.play();
+            }
+            else{
+                video.pause();
+            }
+        }
+    </script>
+</body>
+
+</html>
