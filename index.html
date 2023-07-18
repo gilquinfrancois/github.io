@@ -14,6 +14,7 @@
     <div id="containerP">
         <video id="video" width="320" height="240" autoplay>
             <source src="./vid/Supernatural - Carry On Wayward Son (Music Video).mp4" type="video/mp4">
+
             Your browser does not support the video tag.
         </video>
         <img onclick="playVideo()" id="buttonSupernaturalImg" src="./img/supernatural3.png" alt="supernatural button">
@@ -25,6 +26,7 @@
             var video = document.getElementById("video");
             //afficher la video 
             video.style.display = "block";
+            video.volume = 0.2;
             if(video.paused){
                 video.play();
             }
